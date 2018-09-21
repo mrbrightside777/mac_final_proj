@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="language"
+        android:title="@string/language"
+        android:entries="@array/languages"
+        android:entryValues="@array/languages"
+        android:defaultValue="English"
+        android:summary="@string/language_desc" />
+
+    <ListPreference
+        android:key="theme"
+        android:defaultValue="Light"
+        android:entries="@array/app_themes"
+        android:entryValues="@array/app_themes"
+        android:title="@string/app_theme"
+        android:summary="@string/theme_desc" />
+</PreferenceScreen>
