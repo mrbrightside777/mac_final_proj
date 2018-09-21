@@ -45,7 +45,6 @@ class ProjectsActivity : AppCompatActivity() {
             btnCancelProject.setOnClickListener {
                 alertDialog.dismiss()
             }
-
         }
     }
 }
