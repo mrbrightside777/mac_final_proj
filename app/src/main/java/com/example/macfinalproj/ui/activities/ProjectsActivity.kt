@@ -35,7 +35,6 @@ class ProjectsActivity : AppCompatActivity() {
             alertDialog.show()
 
 
-            /*
             btnAddProject.setOnClickListener {
                 val projectName: String = etProjectName.text.toString()
                 alertDialog.dismiss()
@@ -44,7 +43,7 @@ class ProjectsActivity : AppCompatActivity() {
             btnCancelProject.setOnClickListener {
                 alertDialog.dismiss()
             }
-            */
+
         }
     }
 }
