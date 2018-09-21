@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "587227577644",
+    "firebase_url": "https://macfinalproj.firebaseio.com",
+    "project_id": "macfinalproj",
+    "storage_bucket": "macfinalproj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587227577644:android:f8274372606b27fe",
+        "android_client_info": {
+          "package_name": "com.example.macfinalproj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587227577644-vbi75sis341mki8o5eisq0cg9ou1gj0l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.macfinalproj",
+            "certificate_hash": "db1a88077acf6aa5cadd3ba087875e8344fc1288"
+          }
+        },
+        {
+          "client_id": "587227577644-8dhm7nbcvnimiacn7hfhrh2idtld86s1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.macfinalproj",
+            "certificate_hash": "7cd5982bf603344a5be6b57c071a75c06ede026f"
+          }
+        },
+        {
+          "client_id": "587227577644-1dg08u06j41ien7ajq3tj4cauh6qt3a7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrA1RVAzrBaGHrrHCnJcbZEMxH8S5rZAQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587227577644-1dg08u06j41ien7ajq3tj4cauh6qt3a7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
