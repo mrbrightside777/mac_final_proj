@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="155dp"
+    android:layout_height="145dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp">
+
+            <TextView
+                android:id="@+id/_tvTeamSize_item_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:text="Team size: "
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ivTeamIcon_item_project"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="9dp"
+                android:layout_toEndOf="@+id/_tvTeamSize_item_project"
+                android:layout_toRightOf="@+id/_tvTeamSize_item_project"
+                android:src="@drawable/team" />
+
+            <TextView
+                android:id="@+id/tvTeamCount_item_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/ivTeamIcon_item_project"
+                android:layout_toRightOf="@+id/ivTeamIcon_item_project"
+                android:text="0"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/_tvTasks_item_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/_tvTeamSize_item_project"
+                android:layout_alignLeft="@+id/_tvTeamSize_item_project"
+                android:layout_marginTop="5dp"
+                android:text="Tasks: " />
+
+            <ImageView
+                android:id="@+id/ivPendingIcon_item_project"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_below="@+id/_tvTasks_item_project"
+                android:layout_alignLeft="@+id/_tvTasks_item_project"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pending" />
+
+            <TextView
+                android:id="@+id/tvPendingCount_item_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ivPendingIcon_item_project"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/ivPendingIcon_item_project"
+                android:text="0"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ivInProgressIcon_item_project"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignBottom="@id/ivPendingIcon_item_project"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/tvPendingCount_item_project"
+                android:src="@drawable/in_progress" />
+
+            <TextView
+                android:id="@+id/tvInProgressCount_item_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ivInProgressIcon_item_project"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/ivInProgressIcon_item_project"
+                android:text="0"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ivCompletedIcon_item_project"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignBottom="@id/tvInProgressCount_item_project"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/tvInProgressCount_item_project"
+                android:src="@drawable/done" />
+
+            <TextView
+                android:id="@+id/tvCompletedCount_item_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ivCompletedIcon_item_project"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/ivCompletedIcon_item_project"
+                android:text="0"
+                android:textSize="16sp" />
+
+            <TextView
+
+
+                android:id="@+id/tvProjectQuickNotification_item_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivPendingIcon_item_project"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="You have 3 pending tasks"
+                android:textAlignment="center"
+                android:textSize="9sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorBlueLight"
+            android:gravity="center_vertical"
+            android:text="[Project name]"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

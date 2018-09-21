@@ -1,6 +1,7 @@
 package com.example.macfinalproj.ui.activities
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -34,6 +35,7 @@ class ProjectsActivity : AppCompatActivity() {
             val alertDialog: AlertDialog = alertDialogBuilder.create()
             alertDialog.show()
 
+            btnAddProject.text = "Hello bitch"
 
             btnAddProject.setOnClickListener {
                 val projectName: String = etProjectName.text.toString()
