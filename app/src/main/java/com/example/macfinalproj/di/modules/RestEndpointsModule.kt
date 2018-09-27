@@ -1,6 +1,6 @@
 package com.example.macfinalproj.di.modules
 
-import com.example.macfinalproj.data.remote.RemoteService
+import com.example.macfinalproj.data.remote.APIService
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -9,8 +9,8 @@ import retrofit2.Retrofit
 class RestEndpointsModule {
 
     @Provides
-    fun provideRestEndpoints(retrofit: Retrofit): RemoteService {
-        return retrofit.create(RemoteService::class.java)
+    fun provideRestEndpoints(retrofit: Retrofit): APIService {
+        return retrofit.create(APIService::class.java)
     }
 
 }

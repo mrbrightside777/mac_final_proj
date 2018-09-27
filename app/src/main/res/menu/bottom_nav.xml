@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <<<<<<< HEAD
+=======
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+>>>>>>> cyons_branch
     <item android:id="@+id/projects" android:icon="@drawable/task_icon" android:title="@string/projects_tab"/>
+    <item
+        android:actionLayout="@layout/action_invite"
+        android:id="@+id/invites"
+        android:icon="@drawable/invite"
+        app:showAsAction="always"
+        android:title="@string/invites_tab" />
     <item android:id="@+id/settings" android:icon="@drawable/settings" android:title="@string/settings_tab"/>
 </menu>

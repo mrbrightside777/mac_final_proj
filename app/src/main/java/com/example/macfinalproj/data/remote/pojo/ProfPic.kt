@@ -1,4 +1,4 @@
-package com.example.macfinalproj.data.models
+package com.example.macfinalproj.data.models.pojo
 
 data class ProfPic(
         val status:String,
