@@ -1,4 +1,4 @@
-package com.example.macfinalproj.data.viewModels
+package com.example.macfinalproj.data.compoundModels
 
 data class Project(val projectId:Int,
                    val name:String,
