@@ -1,8 +1,8 @@
 package com.example.macfinalproj.data.remote
 
-import com.example.macfinalproj.data.models.ProfPic
-import com.example.macfinalproj.data.models.Project
-import com.example.macfinalproj.data.models.UserInfo
+import com.example.macfinalproj.data.models.pojo.ProfPic
+import com.example.macfinalproj.data.models.pojo.Project
+import com.example.macfinalproj.data.models.pojo.UserInfo
 import com.example.macfinalproj.utils.Constants
 import kotlinx.coroutines.experimental.Deferred
 import okhttp3.MultipartBody
