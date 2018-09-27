@@ -2,7 +2,6 @@
     <string name="app_name">MacFinalProj</string>
     <string name="title_activity_projects">ProjectsActivity</string>
     <string name="title_activity_tasks">TasksActivity</string>
-    <string name="project_name">Project name:</string>
     <string name="super_cool_project">Super cool project</string>
     <string name="cancel">Отмена</string>
     <string name="add">Добавить</string>
@@ -12,6 +11,14 @@
     <string name="theme_desc">Изменение темы приложений</string>
     <string name="projects_tab">проектов</string>
     <string name="settings_tab">настройки</string>
+    <string name="invites_tab">Предлагает</string>
+    <string name="accept_invite">принимать</string>
+    <string name="dismiss_invite">отклонять</string>
+    <string name="project_owner">владелец</string>
+    <string name="project_name">имя</string>
+    <string name="empty_invites">Нет приглашений</string>
+    <string name="project_name_hint">название проекта</string>
+    <string name="project_description_hint">Описание</string>
     <string-array name="languages">
         <item>English</item>
         <item>Russian</item>
