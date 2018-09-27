@@ -17,7 +17,7 @@ class ProjectsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_projects)
-        setSupportActionBar(toolbar)
+//        setSupportActionBar(toolbar)
 
         initializeAddProjectFloatingButton()
     }
