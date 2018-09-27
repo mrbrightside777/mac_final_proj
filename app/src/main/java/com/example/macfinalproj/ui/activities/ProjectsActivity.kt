@@ -23,28 +23,15 @@ class ProjectsActivity : AppCompatActivity() {
 
     private fun initializeAddProjectFloatingButton() {
         fab.setOnClickListener { view ->
-
             val alertDialogBuilder: AlertDialog.Builder = AlertDialog.Builder(this)
             val view: View = layoutInflater.inflate(R.layout.dialog_addproject, null)
-            val etProjectName = findViewById<EditText>(R.id.etProjectName)
+            val etProjectName = findViewById<EditText>(R.id.project_name)
             val btnAddProject = findViewById<Button>(R.id.btnAdd_dialogAddProject)
             val btnCancelProject = findViewById<Button>(R.id.btnCancel_dialogAddProject)
 
             alertDialogBuilder.setView(view)
             val alertDialog: AlertDialog = alertDialogBuilder.create()
             alertDialog.show()
-
-
-            /*
-            btnAddProject.setOnClickListener {
-                val projectName: String = etProjectName.text.toString()
-                alertDialog.dismiss()
-            }
-
-            btnCancelProject.setOnClickListener {
-                alertDialog.dismiss()
-            }
-            */
         }
     }
 }

@@ -5,17 +5,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import androidx.preference.PreferenceManager
 import com.example.macfinalproj.R
 import com.example.macfinalproj.databinding.ActivityMainBinding
+import com.example.macfinalproj.ui.fragments.InvitesFragment
 import com.example.macfinalproj.ui.fragments.ProjectFragment
 import com.example.macfinalproj.ui.fragments.SettingsFragment
 import com.example.macfinalproj.utils.ContextWrapper
+import com.example.macfinalproj.viewmodels.MainActivityViewModel
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    lateinit var view_model:MainActivityViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,15 +28,35 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNav.setOnNavigationItemSelectedListener {
             when(it.itemId) {
                 R.id.projects -> {
-                    supportFragmentManager.beginTransaction().replace(R.id.frag_container, ProjectFragment.newInstance()).commit()
+                    supportFragmentManager.popBackStack()
+                    supportFragmentManager.beginTransaction()
+                            .replace(R.id.frag_container, ProjectFragment.newInstance(), "project")
+                            .commit()
                 }
+                R.id.invites -> {
+                    supportFragmentManager.beginTransaction()
+                            .replace(R.id.frag_container, InvitesFragment.newInstance(), "invites")
+                            .commit()
+                }
+
                 else -> {
-                    supportFragmentManager.beginTransaction().replace(R.id.frag_container, SettingsFragment.newInstance()).commit()
+                    supportFragmentManager.findFragmentByTag("settings")
+                    supportFragmentManager.beginTransaction()
+                            .replace(R.id.frag_container, SettingsFragment.newInstance(), "settings")
+                            .addToBackStack("settings")
+                            .commit()
                 }
             }
             true
         }
+        view_model = ViewModelProviders.of(this).get(MainActivityViewModel::class.java)
+        supportFragmentManager.beginTransaction().run {
+            val frag = supportFragmentManager.findFragmentByTag("settings") ?: ProjectFragment.newInstance()
+            replace(R.id.frag_container, frag, frag.tag)
+            commit()
+        }
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false)
+
     }
 
     override fun attachBaseContext(newBase: Context?) {
@@ -45,5 +69,9 @@ class MainActivity : AppCompatActivity() {
             else -> "es"
         }
         super.attachBaseContext(ContextWrapper.wrap(newBase!!, Locale(new_locale)))
+    }
+
+    override fun onBackPressed() {
+
     }
 }
