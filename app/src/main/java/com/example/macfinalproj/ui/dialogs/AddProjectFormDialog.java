@@ -15,6 +15,5 @@ public class AddProjectFormDialog extends AlertDialog {
     protected AddProjectFormDialog(Context context, int themeResId) {
         super(context, themeResId);
     }
-
     
 }
